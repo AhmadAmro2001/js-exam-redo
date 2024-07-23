@@ -1,5 +1,4 @@
-let baseUrl = "www.themealdb.com/api/json/v1/1/"
-
+// for the sidebar
 function closeSideBar(){
     $(".sideBar").animate({left:"-240px"},500)
     $(".open").removeClass("fa-x").addClass("fa-bars")
@@ -99,9 +98,6 @@ $("#nowPlaying").on('click',function(){
 
 
 
-
-
-
 function forHover(){
     $(".movieCaption").hover(function(e){
         let {target} = e
@@ -124,15 +120,6 @@ function forHover(){
     }
     )
 }
-
-
-// function displayTest(x){
-//     cartona = `<img src="${x[0].backdrop_path}" alt="">`
-
-//     let y = document.querySelector(".imgTest")
-//     y.innerHTML = cartona
-// }
-
 
 function displayMovies(x){
     let data = x 
